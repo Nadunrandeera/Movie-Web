@@ -11,8 +11,11 @@ function Home() {
     ];
     const handleSearch = (e) => {
         e.preventDefault();
-        alert(searchQuery); 
-        setSearchQuery("******");
+        alert(searchQuery); //search query
+        // Perform search logic here
+        // For example, you can filter the movies array based on the search query
+        // const filteredMovies = movies.filter(movie => movie.Title.toLowerCase().includes(searchQuery.toLowerCase()));
+        setSearchQuery("");
     }
     return(
         <div className="home">
@@ -29,9 +32,11 @@ function Home() {
             <div className="movies-grid">
                 {movies.map(
                     (movie) => 
-                    movie.Title.toLowerCase().startsWith(searchQuery)&&(
+                    (
                     <MovieCard movie={movie} key={movie.id} />
-                ))}
+                    )
+                    )
+                }
 
             </div>
 
