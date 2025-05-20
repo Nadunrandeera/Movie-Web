@@ -1,3 +1,4 @@
+
 .favorites {
   padding: 2rem;
   width: 100%;
@@ -49,4 +50,3 @@
 .movies-grid > * {
   animation: fadeIn 0.3s ease-out forwards;
 }
-

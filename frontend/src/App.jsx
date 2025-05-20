@@ -2,8 +2,8 @@
 import { Route, Routes } from 'react-router-dom'
 import './css/App.css'
 import Home from './pages/Home'
-import Favourite from './pages/favourite'
 import NabVar from './componenets/NavBar'
+import Favorites from "./pages/Favorites";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <main className='main-container'> 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/favourite' element={<Favourite/>} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </main>
     </div>

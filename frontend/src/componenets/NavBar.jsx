@@ -8,8 +8,9 @@ function NabVar(){
         </div>
         <div className="navbar-links">
             <Link to="/" className="nav-link">Home</Link>
-            <Link to="/favourite" className="nav-link">Favourite</Link>
+            <Link to="/favorites" className="nav-link">Favorites</Link>
         </div>
     </nav>
 }
 export default NabVar;
+
