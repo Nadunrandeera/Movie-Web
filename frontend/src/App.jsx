@@ -1,6 +1,6 @@
 
 import { Route, Routes } from 'react-router-dom'
-import './App.css'
+import './css/App.css'
 import Home from './pages/Home'
 import Favourite from './pages/favourite'
 import NabVar from './componenets/NavBar'
